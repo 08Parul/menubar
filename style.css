@@ -1,0 +1,293 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+
+.page1, .page2{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.page1 a{
+    background-color: white;
+    font-size: 30px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+
+}
+.page1>img{
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;}
+    
+.overlay{
+    background-color: white;
+    opacity: 0.1;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+.page1 .heading{
+    color: black;
+    
+    position: absolute;
+    font-size: 6vh;
+    word-spacing: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+/* page2-loginup */
+.page2{
+    position: relative;
+    background-color:#F8E3B6;   
+    
+}
+
+.page2 .heading{
+    
+    text-align: center;
+    padding: 10px;
+    font-size: 3vh;
+}
+
+.page2 .sign-login-page{
+    width: 40vw;
+    height: 80vh;
+    border: 1px solid black;
+    padding: 4vh;
+    margin: 30px auto;
+    position: relative;
+    border-radius: 20px;
+    background-color: #FCF2D9;    
+
+}
+
+.page2 .scroll-bar{
+    display: flex;
+    top: 4vh;
+    width: 30vw;
+    margin: 30px auto;
+    left: 2vh;
+    
+    
+}
+
+.page2 .scroll-bar button{
+    width: 50%;
+    
+    padding: 1.3vh ;
+    margin-bottom: 10vh;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+.page2 .scroll-bar .loginBar{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-right: none;
+}
+.page2 .scroll-bar .signupBar{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    /* border-left: ; */
+}
+
+
+
+/* .page2 .login-page{
+    display: none;
+}  */
+
+.page2 .signup-page{
+    position: relative;
+    display: none;
+}
+.page2 .signup-page>input{
+    width: 80%;
+    margin: auto;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 8px 2px 4px ;
+    text-align: center;
+    border-radius: 20px;
+    margin: 15px 35px;
+font-weight: 500;
+font-size: 20px;
+
+}
+.page2 .signup-page .signup-btn{
+    
+    margin:  50px 8vw;
+    width: 20vw;
+    font-size: 2.5vh;
+    text-align: center;
+    border-radius: 10px; 
+
+}
+
+
+
+.page2 .login-page>input{
+    width: 80%;
+    margin: auto;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 8px 2px 4px ;
+    text-align: center;
+    border-radius: 20px;
+    margin: 15px 35px;
+font-weight: 500;
+font-size: 2.5vh;
+
+}
+
+.page2 .login-page .login-btn{
+    
+    margin:  50px 8vw;
+    width: 20vw;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px; 
+    padding: 0.5vh;
+
+}
+
+
+/* page3 */
+.page3{
+    background-color:#F8E3B6; 
+    position: relative;
+    width: 100vw;
+    height: 200vh;
+}
+.page3 .navbar {
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 2vh  3vh;
+    
+}
+.page3 .logo {
+    display: flex;
+    font-size: 3.4vh;
+    padding-top: 2vh;
+}
+.page3 .logo img {
+    margin-right: 4vh;
+    width: 5vh; /* Adjust as needed */
+}
+.page3 .icons img {
+    width: 5vh; /* Adjust as needed */
+    margin-left: 20px;
+}
+
+.page3 .hero-product-bar{
+    display: flex;
+
+}
+.page3 .hero-product{
+    overflow: hidden;
+    margin: 6vh;
+    display: flex;
+    width: 25vw;
+    height: 25vh;
+    background-color: #57280A;
+    border-radius: 2vh;
+    color: #F8E3B6; 
+    padding: 2vh;
+}
+
+.page3 .hero-product .product{
+    width: 60%;
+    padding: 2vh;
+    line-height: 1.5;
+    
+
+} 
+.page3 .hero-product .product .more{
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    margin-top: 4vh;
+
+
+}
+.page3 .hero-product .product-img {
+    width: 30%;
+    
+    object-fit: cover;
+    margin: 2vh 1vh;
+    border-radius: 1vh;
+}
+
+
+.page3 .recommendations .recommendation-heading{
+    padding: 2vh 6vh;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.page3   .recommended-product-bar{
+    display: flex;
+    position: relative;
+    padding: 3vh;
+}
+
+.page3 .recommended-products{
+    width: 20vw;
+    height: 28vh;
+    position: relative;
+    display: inline-block;
+}
+
+.page3 .rec-pro-img{
+    width: 18vw;
+    height: 25vh;
+    margin: 2vh;
+    position: relative; /* Ensure .product-category is positioned relative to this element */
+}
+
+.page3 .recommended-products .product-category{
+    position: absolute;
+    bottom: 1vh;
+    left: 50%; /* Move to the center horizontally */
+    transform: translateX(-50%); /* Adjust position to center properly */
+}
+
+.page3 .inShop>h3 {
+    margin: 1px 15px ;
+}
+.page3 .shop-pro-bar{
+    display: flex;
+    padding: 1.4vh;
+}
+.page3 .inshop-products{
+    padding: 3vh;
+    text-align: center;
+}
+
+.page3 .inshop-products img{
+    width: 25vw;
+    height: 25vh;
+    object-fit: cover;
+    margin: 1vh;
+}
